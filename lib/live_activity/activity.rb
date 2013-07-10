@@ -68,6 +68,9 @@ module LiveActivity
 
       self.verb      = data.delete(:verb)
 
+      self.reverses  = definition.reverses ? definition.reverses.to_s : nil
+
+
       cur_receivers  = data.delete(:receivers)
 
 

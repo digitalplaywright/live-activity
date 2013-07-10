@@ -1,7 +1,7 @@
-require 'generators/live_stream'
+require 'generators/live_activity'
 require 'rails/generators/active_record'
 
-module LiveStream
+module LiveActivity
   module Generators
     # Migration generator that creates migration file from template
     class MigrationGenerator < ActiveRecord::Generators::Base

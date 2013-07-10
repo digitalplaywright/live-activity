@@ -77,6 +77,16 @@ class ActivityTest < ActiveSupport::TestCase
 
   end
 
+  def test_reverses_bond_type
+    _user    = User.create()
+    _article = Article.create()
+    _volume  = Volume.create()
+
+    _activity = Activity.publish(:test_reverses_bond_type, :actor => _user, :act_object => _article, :act_target => _volume)
+
+    assert _activity.reverses  == 'test_bond_type'
+
+  end
 
 
 

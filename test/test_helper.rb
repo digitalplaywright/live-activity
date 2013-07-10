@@ -7,7 +7,7 @@ require 'active_support/testing/setup_and_teardown'
 require 'live_activity'
 require 'minitest/autorun'
 
-#LiveStream.config # touch config to load ORM, needed in some separate tests
+#LiveActivity.config # touch config to load ORM, needed in some separate tests
 
 require 'active_record'
 require 'active_record/connection_adapters/sqlite3_adapter'
@@ -54,6 +54,14 @@ class Activity < ActiveRecord::Base
     act_object   :Article
     act_target   :Volume
     bond_type    :global
+  end
+
+  activity :test_reverses_bond_type do
+    actor        :User
+    act_object   :Article
+    act_target   :Volume
+    bond_type    :global
+    reverses     :test_bond_type
   end
 
 end

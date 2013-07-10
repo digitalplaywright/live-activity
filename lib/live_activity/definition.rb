@@ -2,7 +2,7 @@ module LiveActivity
 
   class Definition
 
-    attr_reader :name, :actor, :act_object, :act_target, :grouped_actor, :bond_type, :options,  :receivers
+    attr_reader :name, :actor, :act_object, :act_target, :grouped_actor, :bond_type, :reverses, :options,  :receivers
 
     # @param dsl [LiveActivity::DefinitionDSL] A DSL act_object
     def initialize(definition)
@@ -13,6 +13,7 @@ module LiveActivity
       @grouped_actor    = definition[:grouped_actor] || nil
       @bond_type        = definition[:bond_type]     || nil
       @options          = definition[:options]       || []
+      @reverses         = definition[:reverses]      || nil
     end
 
     #

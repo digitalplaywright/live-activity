@@ -1,9 +1,11 @@
 # LiveActivity
 
-LiveActivity is a simple Ruby activity stream gem for use with the ActiveRecord ODM framework inspired by
-Streama by Christopher Pappas.
+LiveActivity is a simple Ruby activity stream gem for use with the ActiveRecord ODM framework.
 
-[![travis](https://secure.travis-ci.org/digitalplaywright/live_activity.png)](http://travis-ci.org/digitalplaywright/live_activity)
+This gem is inspired by Streama by Christopher Pappas.
+
+[![Build Status](https://secure.travis-ci.org/digitalplaywright/live-activity.png)](http://travis-ci.org/digitalplaywright/live-activity) [![Dependency Status](https://gemnasium.com/digitalplaywright/live-activity.png)](https://gemnasium.com/digitalplaywright/live-activity) [![Code Climate](https://codeclimate.com/github/digitalplaywright/live-activity.png)](https://codeclimate.com/github/digitalplaywright/live-activity)
+
 
 ## Install
 
@@ -14,7 +16,7 @@ Streama by Christopher Pappas.
 ### Create migration for activities and migrate the database (in your Rails project):
 
 ```ruby
-rails g public_activity:migration
+rails g live_activity:migration
 rake db:migrate
 ```
 

@@ -1,1 +1,1 @@
-../../lib/generators/live_stream/migration/templates/migration.rb
+../../lib/generators/live_activity/migration/templates/migration.rb

@@ -41,7 +41,7 @@ module LiveActivity
       end
     end
 
-    data_methods :actor, :act_object, :act_target, :grouped_actor, :bond_type
+    data_methods :actor, :act_object, :act_target, :grouped_actor, :reverses, :bond_type
 
   end
   

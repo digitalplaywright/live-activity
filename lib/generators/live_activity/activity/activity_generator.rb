@@ -1,4 +1,4 @@
-require 'generators/live_stream'
+require 'generators/live_activity'
 require 'rails/generators/active_record'
 
 module LiveActivity
