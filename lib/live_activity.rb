@@ -1,0 +1,9 @@
+require 'active_record'
+require 'active_support'
+require 'active_support/core_ext/module/delegation.rb'
+require "live_activity/version"
+require "live_activity/actor"
+require "live_activity/activity"
+require "live_activity/definition"
+require "live_activity/definition_dsl"
+require "live_activity/errors"
