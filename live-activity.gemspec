@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Activity Streams for rails}
   s.description = %q{LiveActivity is a simple activity stream gem for use with the ActiveRecord ODM framework}
   s.homepage    = 'https://github.com/digitalplaywright/live-activity'
+  s.license     = 'MIT'
 
   s.rubyforge_project = "live-activity"
 
